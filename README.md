@@ -23,4 +23,4 @@ Install pip requirements `sudo pip3.6 install -r dependencies.pip`
 
 For more info join [@anthemgold](https://t.me/anthemgold) on telegram
 
-[logo]: https://github.com/AnthemGold/Alexandra/blob/master/graphics/alexandra_profile.jpg "Alexandra Profile"
+[logo]: https://github.com/AnthemGold/Alexandra/blob/master/graphics/alexandra_profile.jpg?raw=true "Alexandra Profile"
