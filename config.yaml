@@ -1,0 +1,136 @@
+# The username of your bot as set with the botfather
+BOT_USERNAME: "@Alexandra"
+
+# The bot token supplied by botfather 
+BOT_TOKEN: "**INSERT BOT TOKEN**"
+
+# The telegram Id of the bot owner
+BOT_OWNER_ID: 494538964
+
+# Admin Telegram Ids
+ADMINS:
+  - 494538964  # my-telegram-user-id
+  - 2890515101 # Michael Statisto
+  - 285295183  # Futjrn
+ 
+# Stop words for wordcloud 
+WORDCLOUD_STOPWORDS: 
+  - anthemgold
+  - anthem
+  - gold
+  - hayek
+  - hercules
+  - HERC
+
+# Shill Detected
+# URLS of shill links to look out for to issue a warning message
+SHILL_DETECTOR: 'bitmex\.com\/register\/([a-zA-Z0-9]*)|cryptofacilities\.com\/derivatives\/([a-zA-Z0-9-_]*)|bitfinex\.com\/\?refcode=([a-zA-Z0-9]*)|simplefx\.com\/\?sfx-r=([a-zA-Z0-9-_]*)|1broker\.com\/\?c=en\/action\/r&i=([a-zA-Z0-9]*)|nitrogensports\.eu\/r\/([a-zA-Z0-9]*)|binance\.com\/\?ref=([a-zA-Z0-9]*)|deribit\.com\/reg-([a-zA-Z0-9\.]*)'
+# bitmex\.com\/register\/([a-zA-Z0-9]*)|
+# cryptofacilities\.com\/derivatives\/([a-zA-Z0-9-_]*)|
+# bitfinex\.com\/\?refcode=([a-zA-Z0-9]*)|
+# simplefx\.com\/\?sfx-r=([a-zA-Z0-9-_]*)|
+# 1broker\.com\/\?c=en\/action\/r&i=([a-zA-Z0-9]*)|
+# nitrogensports\.eu\/r\/([a-zA-Z0-9]*)|
+# binance\.com\/\?ref=([a-zA-Z0-9]*)|
+# deribit\.com\/reg-([a-zA-Z0-9\.]*)
+
+# List of matching shill links and their counter shill links to replace the offending messages with
+COUNTER_SHILL:
+
+  - title: 'AnthemGold'
+    match: 'anthemgold\.com\/reg-([a-zA-Z0-9\.]*)'
+    link : 'http://www.anthemgold.com'
+
+MESSAGES:
+
+  # The message displayed to new users when they join your room
+  welcome:
+    - "Welcome %s, I'm Alexandra, group secretary. Please PM (@AGLD_mod_bot) to see chat rules."
+    - "Hi %s, welcome to the group"
+
+  # A special welcome message for an individually special room 
+  welcome_special: 'Welcome %s, this is a special chat group with a special welcome message'
+
+  # If someone tries to use a command for the bot in a public channel
+  # The bot will message the user telling them to pm them
+  pmme:
+    - "%s, some things are better left for behind closed doors. PM me for house rules."
+
+  # The 'welcome' message when users first initiate pm with the bot
+  start: |
+    Hi %s, Welcome to AnthemGold
+    
+    Please click one of the links to see how i can help you:
+    /rules  - See AnthemGold Rules
+    /about - about us
+    /admins - See list of admins to contact for help.
+    /discord - How to connect to Discord
+    /telegram - Our telegram Channels
+
+  # The 'admin' extra control pannel welcome message
+  admin_start: |
+    %s, this is your admin control:
+    
+    /topstickers - posts the top 3 stickers from the last 3 days into the main room chat
+    /topgif - post the top gif to anthemgold + feed
+    /topgifposters - post who are the top 5 gif posters 
+    /todayinwords - Today in words...
+    /todaysusers - Wordcloiud of whos active today
+    /promotediscord 'message' - spam / promote discord with a specified message.
+    /commandstats - get the command stats since the start of the month
+    /joinstats - get the join stats since the start of the month  
+ 
+  # About page
+  about: | 
+   *About AnthemGold*
+   
+   A Legacy of Gold. AnthemGold is an innovative cryptocurrency that is backed by gold and utilizes blockchain technology to allow people to purchase, hold and spend gold securely. 
+   
+   For more information, visit http://www.anthemgold.com/. 
+
+   /start - to go back to home
+ 
+  # JSon list of admins for the '/admins' request page
+  admins_json:
+    "@anthemhayek":
+      adminOf: "AnthemGold"
+      about  : "Founder"
+    "@Futjrn":
+      adminOf: "AnthemGold"
+      about  : "CTO"
+    "@SamEaton":
+      adminOf: "AnthemGold"
+      about  : "Digital Marketer"
+    "@statisto":
+      adminOf: "AnthemGold"
+      about  : "Market Strategy"
+    "James Stroud":
+      adminOf: "AnthemGold"
+      about  : "Community Moderator"
+    "@denfeet":
+      adminOf: "AnthemGold"
+      about  : "Bot Developer"
+
+  # Rules
+  rules: |
+   *Rules*
+ 
+   This channel is specifically to discuss AnthemGold. 
+   Please no posts that are off topic or spam. 
+   We have a zero tolerance for trolls or personal attacks. Be civil and polite.
+   
+   /start - to go back to home
+
+  # Discord info request 
+  discord: > 
+   Join us on the AnthemGold Discord!
+   https://discord.gg/JQFAb3y
+   
+   /start - to go back to home
+   
+  # Telegram info request
+  telegram: |
+   Make sure you join our main group here on Telegram:
+   https://t.me/anthemgold
+   
+   /start - to go back to home
