@@ -15,12 +15,12 @@ A simple telegram bot to help manage telegram channels using [python-telegram-bo
 * Scan links that users post for affiliate links, remove their post, replace with a message with your own appropriate affiliate link, ban the user
 
 ### Requirements
-Mongodb
-Install pip requirements `sudo pip3.6 install -r dependencies.pip`
+- Mongodb
+- Install pip requirements `sudo pip3.6 install -r dependencies.pip`
 
 ### Run
 `python alexandra.py`
 
 For more info join [@anthemgold](https://t.me/anthemgold) on telegram
 
-[logo]: https://github.com/AnthemGold/Alexandra/blob/master/graphics/alexandra_profile.jpg?raw=true "Alexandra Profile"
+![Alexandra Profile](https://github.com/AnthemGold/Alexandra/blob/master/graphics/alexandra_profile.jpg?raw=true)
